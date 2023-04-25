@@ -235,7 +235,59 @@ const letterCounter =(phrase)=>{
 
 //sum of all numbers
 
+const sumArray=(numbers)=>{
+    let result = 0;
+    //for loop
+    for (const number of numbers){
+        result += number;
+    }
+    return{result}
+}
+// const numbs =[1,2,3,4,5]
+// console.log(sumArray(numbs))
 
+const max=(numbers)=>{
+    //do not set result to 0 since there may exist negative numbers
+    let result =numbers[0];
+    //loop
+    for (const number of numbers){
+        if (number>result){
+            result = number;
+        }
+    }
+    return {result}; //this is returning result as object
+}
+// console.log(max([-1,-2,-1,-4,-5,-2,-1,-3,0]))
+
+//function to calculate frequency
+const letterfrequency =(phrase)=>{
+    //make frequency as an object
+    let frequency ={}
+    for (const letter of phrase){
+    //check if letter exists in the frequency
+    if (letter in frequency){
+        //increment value by +1
+        frequency[letter] ++    //or use += 1
+        //otherwise set the value to 1
+     } else {
+        frequency[letter] =1
+     }
+    }
+    return frequency
+}
+//console.log(letterfrequency('What are you doing right now ?'))
+
+//incremental/decremental operators
+// ++ , -- ,+=
+
+//word frequency
+const wordFrequency =(phrase)=>{
+    let frequency= {}
+
+
+    return frequency
+}
+console.log(wordFrequency('What are you doing right now ?'))
 
 
 
